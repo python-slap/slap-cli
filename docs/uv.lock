@@ -78,7 +78,7 @@ name = "click"
 version = "8.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/96/d3/f04c7bfcf5c1862a2a5b845c6b2b360488cf47af55dfa79c98f6a6bf98b5/click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de", size = 336121 }
 wheels = [
@@ -146,7 +146,7 @@ requires-dist = [
     { name = "click", specifier = "==8.1.7" },
     { name = "colorama", specifier = "==0.4.6" },
     { name = "ghp-import", specifier = "==2.1.0" },
-    { name = "griffe", specifier = "==0.45.2" },
+    { name = "griffe", specifier = "==1.5.5" },
     { name = "idna", specifier = "==3.7" },
     { name = "jinja2", specifier = "==3.1.4" },
     { name = "markdown", specifier = "==3.6" },
@@ -193,14 +193,14 @@ wheels = [
 
 [[package]]
 name = "griffe"
-version = "0.45.2"
+version = "1.5.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3b/03/b87202abe17eabc6bbdbfe80adf2cd294880e480c31b546444c9590d13ed/griffe-0.45.2.tar.gz", hash = "sha256:83ce7dcaafd8cb7f43cbf1a455155015a1eb624b1ffd93249e5e1c4a22b2fdb2", size = 102422 }
+sdist = { url = "https://files.pythonhosted.org/packages/5c/74/cd35a98cb11f79de0581e8e1e6fbd738aeeed1f2d90e9b5106728b63f5f7/griffe-1.5.5.tar.gz", hash = "sha256:35ee5b38b93d6a839098aad0f92207e6ad6b70c3e8866c08ca669275b8cba585", size = 391124 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d6/aa/dc23ebc0160f9d264f6e885313388dceb873e302da25082557baa533e1a8/griffe-0.45.2-py3-none-any.whl", hash = "sha256:297ec8530d0c68e5b98ff86fb588ebc3aa3559bb5dc21f3caea8d9542a350133", size = 120321 },
+    { url = "https://files.pythonhosted.org/packages/1f/88/52c9422bc853cd7c2b6122090e887d17b5fad29b67f930e4277c9c557357/griffe-1.5.5-py3-none-any.whl", hash = "sha256:2761b1e8876c6f1f9ab1af274df93ea6bbadd65090de5f38f4cb5cc84897c7dd", size = 128221 },
 ]
 
 [[package]]
@@ -306,7 +306,7 @@ version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "ghp-import" },
     { name = "jinja2" },
     { name = "markdown" },
